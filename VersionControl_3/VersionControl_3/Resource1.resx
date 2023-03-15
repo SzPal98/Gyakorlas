@@ -121,7 +121,7 @@
     <value>Hozzaadas</value>
   </data>
   <data name="FirstName" xml:space="preserve">
-    <value>Keresztnev</value>
+    <value>Utónév</value>
   </data>
   <data name="LastName" xml:space="preserve">
     <value>Vezeteknev</value>

@@ -70,7 +70,7 @@ namespace VersionControl_3 {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Keresztnev.
+        ///   Looks up a localized string similar to Utónév.
         /// </summary>
         internal static string FirstName {
             get {
