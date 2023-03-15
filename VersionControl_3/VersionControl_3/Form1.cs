@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -76,6 +77,16 @@ namespace VersionControl_3
                     sw.WriteLine(); // Ez a sor az alábbi módon is írható: sr.Write("\n");
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            User g = (User)listBox1.SelectedItem;
+            var od = from x in users
+                     where x.ID == g.ID
+                     select x;
+
+            users.Remove(od.FirstOrDefault());
         }
     }
 }
